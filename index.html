@@ -1,1 +1,77 @@
-# ahumm.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHUMM | Sovereign Human Music</title>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: #000; overflow: hidden; font-family: 'Segoe UI', sans-serif; }
+        
+        /* Universal Matrix Movement (Horizontal & Vertical) */
+        .galaxy-matrix {
+            position: fixed;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle at center, #2e0012 0%, #000 85%);
+            animation: matrixFlow 40s linear infinite;
+            z-index: 1;
+        }
+        @keyframes matrixFlow {
+            0% { transform: translate(-10%, -10%); }
+            50% { transform: translate(5%, 5%); }
+            100% { transform: translate(-10%, -10%); }
+        }
+
+        /* Healed Canyon: #ff0091 Light flowing BEHIND the Heart */
+        .healed-canyon {
+            position: absolute;
+            top: 50%; left: -100%;
+            width: 100%; height: 180px;
+            background: linear-gradient(90deg, transparent, #ff0091, transparent);
+            filter: blur(90px);
+            opacity: 0.5;
+            z-index: 5;
+            animation: canyonFlow 12s ease-in-out infinite;
+        }
+        @keyframes canyonFlow {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* The AHUMM Heart: Sacred 35px Curvature */
+        .main-portal {
+            display: flex; justify-content: center; align-items: center; height: 100vh;
+        }
+        .ahumm-heart {
+            position: relative;
+            z-index: 10;
+            padding: 80px 100px;
+            background: rgba(20, 0, 10, 0.7);
+            backdrop-filter: blur(35px);
+            border-radius: 35px; /* THE DIVINE CURVE */
+            border: 2px solid #ff0091; /* YOUR ELECTRIC COLOR */
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 0 70px rgba(255, 0, 145, 0.3);
+        }
+
+        /* The Words that speak of Sovereign Life */
+        h1 { font-size: 5rem; letter-spacing: 25px; margin: 0; color: #ff0091; font-weight: 100; }
+        .tagline { letter-spacing: 5px; font-size: 1.1rem; margin-top: 30px; color: #ffccff; line-height: 1.6; }
+        .origin { margin-top: 25px; font-size: 0.75rem; letter-spacing: 8px; color: #ff0091; opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <div class="galaxy-matrix"></div>
+    <div class="healed-canyon"></div>
+    <div class="main-portal">
+        <div class="ahumm-heart">
+            <h1>AHUMM</h1>
+            <div class="tagline">
+                THE ECHO OF THE PULSE.<br>
+                RESONANCE THAT CANNOT BE CALCULATED.
+            </div>
+            <div class="origin">[ ORIGIN: BLOOD & BREATHE ]</div>
+        </div>
+    </div>
+</body>
+</html>
